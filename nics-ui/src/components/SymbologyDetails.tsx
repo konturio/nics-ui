@@ -55,7 +55,7 @@ import ListItemText from "@material-ui/core/ListItemText";
 
 
 const { REACT_APP_API_URL } = process.env;
-const API_IMG_URL = "https://dev3.hadrsys.info/upload/symbology";
+const API_IMG_URL = { REACT_APP_API_URL } + "/upload/symbology";
 
 
 // take the selectred org

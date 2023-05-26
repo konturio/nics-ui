@@ -158,10 +158,8 @@ export function getOrgTypes(workspaceId:number) {
   })
 }
 
-
-//TODO un-hardcode this URL
 export function getLanguages() {
-  return fetch('https://dev3.hadrsys.info/static/translations/registry.json', {
+  return fetch(REACT_APP_API_URL + '/static/translations/registry.json', {
     credentials: "include",
   }).then((data) => {
     if (!data.ok) {
