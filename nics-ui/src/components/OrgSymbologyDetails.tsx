@@ -49,7 +49,8 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 
-const API_IMG_URL = "https://dev3.hadrsys.info/upload/symbology";
+const { REACT_APP_API_URL } = process.env;
+const API_IMG_URL = REACT_APP_API_URL + "/upload/symbology";
 
 
 const useStyles = makeStyles((theme: Theme) =>
